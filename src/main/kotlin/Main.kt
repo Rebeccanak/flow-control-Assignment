@@ -5,6 +5,7 @@ println(nammes(arrayOf("Rebecca","Bridget","Places","Ivy","Idaya")))
     robots(10)
     robots(16)
    newNumber()
+    println(mixed(arrayOf(2.3,5.5,6,8,9,10.44,20.1)))
 }
 //Create a function that prints out all the odd numbers between 1 and 100
 fun oddNumbers(){
@@ -64,16 +65,20 @@ fun newNumber(){
 
 
 }
+//write a function that takes in an array of
+// mixed types and returns the sum of the decimal
+// elements only
+fun mixed(num:Array<Any>):Double {
+    var sum = 0.00
+    for (x in num) {
 
-//     var sum = 0.00
-//       for (x in num) {
-//
-//            if (x is Double) {
-//               sum += x
-//           }
-//            return sum
-//
+        if (x is Double) {
+            sum += x
+        }
+    }
+        return sum
 
+    }
 
 
 
